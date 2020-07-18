@@ -1,0 +1,35 @@
+Breakfast IDs
+473844, 474360, 694990, 474518, 217315, 550999, 501833, 548793,77526, 478215,
+818935, 509254, 403705, 403705, 478884, 407874, 138062, 497234, 449345, 1115429
+218659, 203788, 476343, 972529, 224648, 756823, 997337, 1176873, 734285, 509496
+549374, 1152734, 157063, 985371, 1176751, 626618, 15171, 984007, 795299, 530488
+
+Meal Catagories(20)
+
+Breakfast
+
+Snacks
+Full meals
+
+Soups, Stews, Chili
+Casseroles
+
+Pizzas
+Salads
+Sauces & Dips
+
+Under 500 Calories
+
+Baking
+Desserts
+Smoothies & Drinks
+
+Meats
+Eggs
+Dairy
+Oils
+
+Nuts
+Seeds
+Fruits
+Veggies

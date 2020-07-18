@@ -1,0 +1,1413 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+// @import url('https://use.typekit.net/okg3zme.css');
+
+@import url('https://use.typekit.net/tmn8qwp.css');
+
+// Theme Colors
+
+$customwhite: #fff;
+$customblack: #000;
+$customyellow: #fff373;
+
+// Fonts
+
+$basefontsize: 16px;
+$basefontfamily: adonis-web, serif;
+// $basefontfamily: 'Inter', sans-serif;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$exbold: 800;
+$black: 900;
+
+$h1: 3rem;
+$h2: 2rem;
+$h3: 1rem;
+
+$h1-level2: 2rem;
+$h2-level2: 1rem;
+$h3-level2: 0.8rem;
+
+$logo: 1rem;
+$span: 1rem;
+
+body {
+  background: rgb(255, 255, 255);
+  font-size: $basefontfamily;
+}
+
+.navbar {
+  background: $customwhite;
+  font-family: $basefontfamily;
+  height: 7rem;
+}
+
+.navbar-nav a {
+  margin: 0 0 0 1rem;
+  color: #2f2f2f;
+  font-family: $basefontfamily;
+  font-size: 0.9rem;
+}
+
+.navbar-nav a:link {
+  margin: 0 0 0 1rem;
+  color: gray;
+  font-family: $basefontfamily;
+  font-size: 0.9rem;
+}
+
+.navbar-nav a:hover {
+  margin: 0 0 0 1rem;
+  color: gray;
+  font-family: $basefontfamily;
+  font-size: 0.9rem;
+}
+
+.navbar-nav a:visited {
+  margin: 0 0 0 1rem;
+  color: gray;
+  font-family: $basefontfamily;
+  font-size: 0.9rem;
+}
+
+.navbar-light .navbar-brand {
+  color: #f34242;
+  font-family: $basefontfamily;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 1rem 0 2rem;
+  font-size: 1.3rem;
+}
+
+.navbar-light .navbar-brand a:link {
+  color: #f34242;
+  font-family: $basefontfamily;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 1rem 0 2rem;
+  font-size: 1.3rem;
+}
+
+.navbar-light .navbar-brand a:visited {
+  color: #f34242;
+  font-family: $basefontfamily;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 1rem 0 2rem;
+  font-size: 1.3rem;
+}
+
+.navbar__form {
+  width: 39%;
+  display: flex;
+  flex-direction: row;
+  margin: auto auto;
+  justify-content: center;
+}
+
+.navbar__form form {
+  border: none;
+  border-bottom: 1.3px solid gray;
+  border-radius: 0;
+  width: 76%;
+}
+
+.navbar__form input {
+  border: none;
+  background: transparent;
+  width: 89%;
+}
+
+.navbar__form button {
+  background: transparent;
+  border: none;
+  color: gray;
+  font-size: 1rem;
+}
+
+.navbar__form input::placeholder {
+  background: transparent;
+  border: none;
+  color: gray;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.home__intro {
+  position: relative;
+  z-index: 0;
+}
+
+.home__intro--slide1 {
+  background: url(./images/caroline-attwood-bpPTlXWTOvg-unsplash.jpg);
+  background-size: cover;
+  height: 28rem;
+  margin: 0;
+  background-position: 0;
+}
+
+.home__intro--slide2 {
+  background: url(./images/demorris-byrd-YlXvFvfybao-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 28rem;
+  margin: 0;
+  background-position: 0;
+}
+
+.home__intro--slide3 {
+  background: url(./images/nur-afni-setiyaningrum-NIBKggQ-bVM-unsplash.jpg);
+  background-size: cover;
+  height: 28rem;
+  margin: 0;
+}
+
+.home__jumbotron--search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  top: -15rem;
+  height: 0;
+}
+
+.home__jumbotron--search h1 {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.home__jumbotron--search--form {
+  margin: auto;
+  width: 100%;
+}
+
+.home__dietcatagories {
+  padding: 3rem 0 4rem 0;
+}
+
+.home__dietcatagories h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  margin: auto auto 1rem auto;
+  width: 80%;
+  font-family: $basefontfamily;
+}
+
+.home__dietcatagories--catagories {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  font-family: $basefontfamily;
+}
+
+.home__dietcatagories--catagories--catagory {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  margin: auto;
+  font-family: $basefontfamily;
+}
+
+.home__dietcatagories--catagories--catagory img {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.home__dietcatagories--catagories--catagory h2 {
+  font-size: 1rem;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  color: $customblack;
+  font-family: $basefontfamily;
+}
+
+// sass src/scss/main.scss src/public/css/main.css
+
+.circle-mask {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.circle-mask img {
+  border-radius: 100%;
+  transition: transform 0.5s ease;
+  transform: scale(0.8);
+  width: 12rem;
+  height: 12rem;
+}
+
+.circle-mask img:hover {
+  transform: scale(0.9);
+  /*
+    transition: all 400ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    */
+}
+
+.home__spotlight--container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 3rem 0;
+}
+
+.home__spotlight--container img {
+  vertical-align: middle;
+  border-style: none;
+  width: 80%;
+  margin: auto auto 2rem auto;
+}
+
+.home__spotlight--container img::after {
+  vertical-align: middle;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  margin: auto auto 2rem auto;
+}
+
+.home__spotlight--container h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  font-family: $basefontfamily;
+  width: 80%;
+  margin: auto auto 1rem auto;
+}
+
+.home__spotlight--container b {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  margin: auto auto 1rem auto;
+  width: 80%;
+}
+
+.home__spotlight--main {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+}
+
+.home__spotlight--spotlight {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+.home__spotlight--container-hr {
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+  width: 80%;
+  margin: auto auto 2rem auto;
+}
+
+.home__spotlight--spotlight--info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  font-family: $basefontfamily;
+}
+
+.home__spotlight--spotlight--info h1 {
+  font-size: 2.5rem;
+  font-family: $basefontfamily;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  line-height: 3rem;
+}
+
+.home__spotlight--spotlight--info p {
+  margin: 0;
+  width: 74%;
+}
+
+.home__spotlight--spotlight--info span {
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+.home__spotlight--spotlight--info button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  background: no-repeat;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  color: salmon;
+}
+
+.home__spotlight--etc {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 78%;
+  grid-gap: 1rem;
+}
+
+.home__spotlight--etc--title {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__spotlight--etc--title b {
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.home__spotlight--etc--recipe {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 2rem;
+  width: 100%;
+  margin: 0;
+}
+
+.home__spotlight--etc--recipe img {
+  width: 45%;
+  height: 11%;
+}
+
+.home__spotlight--etc--recipe--info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 1rem;
+}
+
+.home__spotlight--etc--recipe--info h1 {
+  font-size: 1.2rem;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.home__spotlight--etc--recipe--info span {
+  background: none;
+}
+
+.home__spotlight--etc--recipe--info button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  background: no-repeat;
+  padding: 0;
+}
+
+.home__mealplan {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.home__mealplan--container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto auto;
+  padding: 4rem 0;
+}
+
+.home__mealplan--splashimg {
+  background: url('./images/brooke-lark-jUPOXXRNdcA-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  height: 28rem;
+}
+
+.home__mealplan--info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  background: #96b340;
+  font-family: $basefontfamily;
+  color: #fff;
+}
+
+.home__mealplan--info h1 {
+  font-size: 2rem;
+  font-family: $basefontfamily;
+  font-weight: 700;
+  padding: 0;
+}
+
+.home__mealplan--info p {
+  font-size: 0.7rem;
+}
+
+.home__mealplan--info span {
+  width: 100%;
+}
+
+// .home__mealplan--info button {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   background: #000;
+//   border: none;
+//   padding: 0.5rem;
+//   color: #fff;
+//   font-size: 0.8rem;
+// }
+
+.home__favorites--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  padding: 4rem 0;
+}
+
+.home__favorites--container h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  font-family: $basefontfamily;
+  margin: auto auto 1rem auto;
+  width: 80%;
+}
+
+.home__favorites--spotlight {
+  background: url('./images/adam-niescioruk-LxBiYNQLzjQ-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  margin: 0 auto 4rem auto;
+  height: 28rem;
+  padding: 4rem;
+}
+
+.home__favorites--spotlight span {
+  width: 20%;
+}
+
+.home__favorites--spotlight h1 {
+  background: #fff;
+  color: #000;
+  font-size: 2rem;
+  font-weight: $semibold;
+  font-family: $basefontfamily;
+  padding: 1rem;
+}
+
+.home__favorites--main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.home__favorites--main img {
+  width: 100%;
+}
+
+.home__favorites--main--story {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+}
+
+.home__recipeswereeating--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem 0;
+  background: $customwhite;
+}
+
+.home__recipeswereeating--container h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  font-family: $basefontfamily;
+  margin: auto auto 0.5rem auto;
+}
+
+.home__recipeswereeating--container p {
+  font-size: 1rem;
+  font-family: $basefontfamily;
+  margin: auto auto 3rem auto;
+}
+
+.home__recipeswereeating--main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.home__recipeswereeating--recipe {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+}
+
+.home__recipeswereeating--recipe img {
+  width: 100%;
+}
+
+.home__recipeswereeating--recipe--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+
+.home__recipeswereeating--recipe--info h2 {
+  font-size: 1rem;
+  font-family: $basefontfamily;
+}
+
+.home__recipeswereeating--recipe--info p {
+  font-size: 1rem;
+  margin: auto;
+}
+
+.home__subscribe--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: salmon;
+  height: 6rem;
+}
+
+.home__subscribe--main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  font-family: $basefontfamily;
+}
+
+.home__subscribe--info {
+  font-size: 1rem;
+  font-family: $basefontfamily;
+  color: #fff;
+  width: 50%;
+  justify-content: center;
+  margin: auto auto auto 0;
+}
+
+.home__subscribe--info h1 {
+  font-size: 1rem;
+  font-family: $basefontfamily;
+  color: #fff;
+  margin: 0;
+}
+
+.home__subscribe--form {
+  display: flex;
+  flex-direction: row;
+  width: 46%;
+  margin: auto;
+}
+
+.home__subscribe--form form {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  margin: auto;
+  justify-content: center;
+}
+
+.home__subscribe--form input {
+  background: $customwhite;
+  color: gray;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.home__subscribe--form button {
+  background: $customblack;
+  color: $customwhite;
+  border: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.home__products--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem 0;
+  background: $customwhite;
+  font-family: $basefontfamily;
+}
+
+.home__products--container h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  font-family: $basefontfamily;
+  margin: auto auto 2rem auto;
+  width: 80%;
+}
+
+.home__products--container p {
+  font-size: 1rem;
+  margin: auto auto 3rem auto;
+  font-family: $basefontfamily;
+}
+
+.home__products--main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto auto 2rem auto;
+  justify-content: space-between;
+}
+
+.home__products--product {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+}
+
+.home__products--product img {
+  width: 100%;
+}
+
+.home__products--product--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+
+.home__products--product--info h2 {
+  font-size: 1rem;
+  font-family: $basefontfamily;
+}
+
+.home__products--product--info p {
+  font-family: $basefontfamily;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  height: 17rem;
+  width: 100%;
+  color: $customwhite;
+}
+.footer--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+.footer__sitemap {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.footer__sitemap--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.footer__sitemap--container--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin: auto;
+}
+.footer__sitemap h1 {
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+
+.footer__sitemap ul {
+  padding: 0;
+}
+
+.footer__sitemap li {
+  list-style-type: none;
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.footer__socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer__socialmedia svg {
+  margin: 0 0 0 0.5rem;
+}
+
+/* Recipes Section */
+
+.recipes__mainheader {
+  height: 20rem;
+  background: url('./images/brenan-greene-HPZs4EXRFSU-unsplash.jpg');
+  position: relative;
+  z-index: 0;
+}
+
+.recipes__mainheader--overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // background: rgb(0, 0, 3);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(0, 0, 3, 1) 0%,
+  //   rgba(255, 255, 255, 0) 100%
+  // );
+  background: rgb(0, 0, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 3, 1) 36%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 20rem;
+  position: relative;
+  z-index: 1;
+}
+
+.recipes__mainheader--overlay h1 {
+  color: #fff;
+  margin: 0 0 0 3rem;
+}
+
+.recipes__mealcatagory {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.recipes__mealcatagory h4 {
+  width: 80%;
+  margin: 2rem auto 1rem auto;
+}
+
+.wrapper {
+  height: 16rem;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 3rem auto;
+}
+
+.button-wrapper {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -19rem;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.button-wrapper button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+// .carousel {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   width: 100%;
+//   display: flex;
+//   position: absolute;
+//   left: 0;
+//   transition: all 1s ease;
+//   z-index: 0;
+// }
+
+.card img {
+  width: 20%;
+}
+
+.card1__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 19rem;
+}
+
+.card2__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.card3__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.card4__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.card5__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.card6__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+.card7__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.card8__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.card9__background {
+  background: url('./images/victoria-shes-XgFFJKSPkNk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+}
+
+.slick-list {
+  margin: 0 0 1rem 0;
+  padding: 20rem;
+}
+
+.slick-slide {
+  margin: 0 0 0 1rem;
+}
+
+.slick-dots {
+  width: 100%;
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+  list-style: none;
+  text-align: center;
+}
+
+.recipes__meallist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 0 3rem 0;
+}
+
+.recipes__meallist h1 {
+  margin: auto;
+}
+
+.recipes__meallist-container {
+  width: 80%;
+  margin: 4rem auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  grid-column-gap: 1rem;
+}
+
+.recipes__meallist-container h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.recipes__meallist--list {
+  width: 100%;
+}
+
+.recipes__meallist--list h3 {
+  font-size: 1rem;
+}
+
+.recipes__meallist--list ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.recipes__meallist--list li {
+  width: 100%;
+}
+
+.recipes__spotlight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 4rem 0 3rem 0;
+}
+
+.recipes__spotlight h4 {
+  width: 80%;
+  margin: auto auto 1rem auto;
+}
+
+.recipes__spotlight--container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto auto 3rem auto;
+}
+
+.recipes__spotlight--container--main {
+  background: url('./images/garett-mizunaka-HCmKuS0_szU-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  height: 28rem;
+  margin: 0 1rem 0 0;
+}
+
+.recipes__spotlight--container--main--info--container {
+  background: #f8d3bb;
+}
+
+.recipes__spotlight--container--main--info {
+  width: 40%;
+  align-items: center;
+  height: 28rem;
+}
+
+.recipes__spotlight--etc {
+  background: url('./images/micheile-henderson-t05q7TZObzc-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+  margin: 0 auto 1rem auto;
+  height: 14rem;
+  padding: 4rem;
+}
+
+.recipes__spotlight--container--recipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  grid-gap: 1rem;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.recipes__spotlight--container--recipes-recipe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.recipes__spotlight--container--recipes-recipe img {
+  width: 100%;
+}
+
+.recipes__spotlight--container--recipes-recipe-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes__spotlight--container--recipes-recipe-info h2 {
+  font-size: 1rem;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0.3rem 1rem 1rem 1rem;
+  color: #000;
+}
+
+.recipes__spotlight--container--recipes-recipe-info span {
+  font-size: 0.7rem;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  text-align: center;
+  color: #cf5555;
+  text-transform: uppercase;
+  margin: 1rem 0 0 0;
+}
+
+.recipes__search {
+  width: 100%;
+  background: salmon;
+  padding: 4rem;
+  margin: 3rem 0 0 0;
+}
+
+.recipes__search--container {
+  width: 80%;
+  margin: auto;
+}
+
+.recipes__search--form {
+  width: 100%;
+}
+
+.recipes__search--form input {
+  width: 70%;
+}
+
+/*Mealplans*/
+
+.mealplan__intro--weekly {
+  width: 80%;
+}
+
+.mealplan__intro--weekly--form {
+  width: 80%;
+}
+
+.mealplans__day {
+  display: flex;
+  flex-direction: row;
+  margin: 7rem auto auto auto;
+  width: 80%;
+  justify-content: space-between;
+  background: #fff373;
+}
+
+.mealplans__day--recipe {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  padding: 2rem;
+}
+
+.mealplans__day--recipe--daylabel {
+  background: salmon;
+  padding: 1rem;
+  color: white;
+}
+
+.card {
+  background: #ffffff;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #bebebe;
+}
+
+.card img {
+  width: 100%;
+}
+
+.meals__meallist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 6rem 0;
+}
+
+.meals__meallist h1 {
+  width: 80%;
+  margin: 1rem auto 1rem auto;
+}
+
+.meals__meallist-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 2rem auto 2rem auto;
+  justify-content: space-between;
+}
+
+.meals__meallist--breakfast {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--breakfast--img {
+  background: url('./images/chris-ralston-09HGdZzkP-Q-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--breakfast--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--brunch {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--brunch--img {
+  background: url('./images/ceeces-travel-q8BcEiRGplo-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--brunch--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--lunch {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--lunch--img {
+  background: url('./images/toa-heftiba-inDRPMBfX8M-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--lunch--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--snacks {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--snacks--img {
+  background: url('./images/wyetha-lipford-qh66j4su5nc-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--snacks--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--appetizers {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--appetizers--img {
+  background: url('./images/sebastian-coman-photography-ZGgIYaL9lYk-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--appetizers--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--drinks {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--drinks--img {
+  background: url('./images/kelly-sikkema-AgJdd_HgFPw-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--drinks--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--dinner {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--dinner--img {
+  background: url('./images/claudio-schwarz-purzlbaum-I6Va5UxvozQ-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--dinner--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.meals__meallist--desserts {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.meals__meallist--desserts--img {
+  background: url('./images/otto-norin-zuLYIQ-4ADQ-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 10rem;
+}
+
+.meals__meallist--desserts--info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.landpage_navigation {
+  display: flex;
+  flex-direction: row;
+  background: #dedede;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #5c5a5a;
+  padding: 0 0 0 2rem;
+}
+
+.landpage_navigation svg {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.landpage_navigation span {
+  background: #fff;
+  padding: 1rem;
+}
+
+.landpage_navigation a:link {
+  color: #5c5a5a;
+}
+
+.landpage_navigation a:visited {
+  color: #5c5a5a;
+}
+
+.landpage_navigation a:active {
+  color: #5c5a5a;
+}
+
+.landpage_navigation a:hover {
+  color: #5c5a5a;
+}
+
+.landingpage_catagory {
+  width: 100%;
+  margin: 3rem 0 3rem 0;
+}
+
+.landingpage_catagory h1 {
+  width: 80%;
+  margin: auto auto 2rem auto;
+}
+
+.landingpage_catagory--list {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.landingpage_recipe--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 18%;
+}
+
+.landingpage_recipe--img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landingpage_recipe--img img {
+  width: 100%;
+  height: 10rem;
+}
+
+.landingpage_recipe--info {
+  margin: 1rem 0;
+}
+
+.landingpage_recipe--info h5 {
+  font-size: 0.8rem;
+}
